@@ -1,25 +1,30 @@
 {
-  "name": "generator-edison",
-  "version": "0.1.0",
-  "description": "A Yeoman generator for getting started with an Intel Edison IoT project.",
-  "main": "index.js",
+  "name": "generator-edison-cylon",
+  "version": "0.0.0",
+  "description": "Yeoman generator",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "codefoster/generator-edison-cylon",
+  "author": {
+    "name": "Jeremy Foster",
+    "email": "jeremy.foster@live.com",
+    "url": "https://github.com/codefoster"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/codefoster/generator-edison"
-  },
+  "files": [
+    "generators"
+  ],
   "keywords": [
     "yeoman-generator"
   ],
-  "author": "Jeremy Foster <jeremy.foster@live.com> (http://codefoster.com/)",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/codefoster/generator-edison/issues"
-  },
-  "homepage": "https://github.com/codefoster/generator-edison",
   "dependencies": {
-    "yeoman-generator": "^0.18.9"
+    "yeoman-generator": "^0.19.0",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.2"
+  },
+  "devDependencies": {
+    "mocha": "*"
   }
 }

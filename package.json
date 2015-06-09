@@ -1,10 +1,10 @@
 {
-  "name": "generator-edison-cylon",
+  "name": "generator-edison",
   "version": "0.0.0",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "codefoster/generator-edison-cylon",
+  "repository": "codefoster/generator-edison",
   "author": {
     "name": "Jeremy Foster",
     "email": "jeremy.foster@live.com",
@@ -20,8 +20,11 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.19.0",
     "chalk": "^1.0.0",
+    "inquirer": "^0.8.5",
+    "lodash": "^3.9.3",
+    "rx": "^2.5.3",
+    "yeoman-generator": "^0.19.0",
     "yosay": "^1.0.2"
   },
   "devDependencies": {

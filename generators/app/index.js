@@ -16,7 +16,7 @@ module.exports = yeoman.generators.Base.extend({
 
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the wicked ' + chalk.red('Edison') + ' generator!'
+      'Welcome to the ' + chalk.red('Edison') + ' project generator!'
     ));
 
     
@@ -72,7 +72,10 @@ module.exports = yeoman.generators.Base.extend({
     app: function () {
       this.fs.copy(this.templatePath('_package.json'),this.destinationPath('package.json'));
       this.fs.copy(this.templatePath('_config.js'),this.destinationPath('config.js'));
-      this.fs.copy(this.templatePath('_app.js'),this.destinationPath('app.js'));
+      
+      
+      var libraryTemplate = (this.rootAnswers.library == 'johnnyfive' ? '_app_johnnyfive.js' : '_app_cylon.js');
+      this.fs.copy(this.templatePath(libraryTemplate),this.destinationPath('app.js'));
 
     },
 
